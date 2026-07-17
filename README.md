@@ -66,11 +66,6 @@ The network was designed to simulate communication between different routing dom
 
 ---
 
-## Repository Structure
-Project/ │ ├── GNS3_Project/ ├── Configurations/ ├── Screenshots/ ├── Week3_Report.pdf └── README.md
-
----
-
 ## Verification
 
 The following tests were successfully completed:
