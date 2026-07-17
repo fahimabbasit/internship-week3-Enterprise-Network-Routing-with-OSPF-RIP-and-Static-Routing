@@ -1,0 +1,62 @@
+Jul 16 19:54:58.033 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 16 19:54:58.037 HYPERVISOR: Started on IP = localhost, TCP port = 53594.
+Jul 16 19:54:58.472 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 16 19:54:58.476 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips 
+Jul 16 19:54:58.476 GENERAL: working_dir=C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips
+Jul 16 19:54:58.478 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\8c7b49d8-a7bd-4f76-9669-e8751ffe1774 
+Jul 16 19:54:58.487 GENERAL: working_dir=C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\8c7b49d8-a7bd-4f76-9669-e8751ffe1774
+Jul 16 19:54:58.487 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Jul 16 19:54:58.487 VM: VM R1 created.
+Jul 16 19:54:58.487 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Jul 16 19:54:58.500 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Jul 16 19:54:58.502 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jul 16 19:54:58.505 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Jul 16 19:54:58.505 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 19:54:58.505 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60bf8ba0 
+Jul 16 19:54:58.505 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/FahimKhan/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 16 19:54:58.519 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.51c4.0000 
+Jul 16 19:54:58.519 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jul 16 19:54:58.526 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 19:54:58.526 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Jul 16 19:54:58.528 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 19:54:58.528 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-16ESW 
+Jul 16 19:55:03.814 HYPERVISOR: exec_cmd: nio create_udp udp-d7da4500-1dae-4a78-85da-77dd5399ab31 10002 127.0.0.1 10003 
+Jul 16 19:55:04.704 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-d7da4500-1dae-4a78-85da-77dd5399ab31 
+Jul 16 19:55:04.704 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 19:55:04.930 HYPERVISOR: exec_cmd: nio create_udp udp-d6ad53b1-9415-492f-86ee-85f07999c11a 10006 127.0.0.1 10007 
+Jul 16 19:55:04.948 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-d6ad53b1-9415-492f-86ee-85f07999c11a 
+Jul 16 19:55:04.948 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 19:55:51.981 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jul 16 19:55:51.997 VM: VM Ghost created.
+Jul 16 19:55:51.997 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/FahimKhan/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 16 19:55:52.013 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jul 16 19:55:52.016 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Jul 16 19:55:52.016 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 16 19:55:52.016 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jul 16 19:55:52.016 HYPERVISOR: exec_cmd: vm start Ghost 
+Jul 16 19:55:52.688 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jul 16 19:55:52.688 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jul 16 19:55:52.905 VM: VM Ghost shutdown.
+Jul 16 19:55:52.907 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jul 16 19:55:52.909 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jul 16 19:55:52.909 VM: VM Ghost destroyed.
+Jul 16 19:55:52.934 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jul 16 19:55:52.934 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Jul 16 19:55:52.934 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 19:55:52.950 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Jul 16 19:55:52.950 HYPERVISOR: exec_cmd: vm start R1 
+Jul 16 19:56:23.489 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 16 19:56:23.535 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 16 20:03:40.999 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 20:03:41.004 HYPERVISOR: exec_cmd: vm stop R1 
+Jul 16 20:03:41.322 VM: VM R1 shutdown.
+Jul 16 20:03:41.324 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 16 20:03:48.402 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 20:03:48.405 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 16 20:03:48.861 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 16 20:03:48.868 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 16 20:03:48.874 HYPERVISOR: exec_cmd: vm delete R1 
+Jul 16 20:03:48.874 VM: VM R1 destroyed.
+Jul 16 20:03:48.880 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 16 20:03:49.266 HYPERVISOR: Stopped.
+Jul 16 20:03:49.267 GENERAL: reset done.

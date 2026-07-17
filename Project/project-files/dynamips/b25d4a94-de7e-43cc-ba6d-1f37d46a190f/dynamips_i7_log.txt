@@ -1,0 +1,51 @@
+Jul 16 19:54:58.904 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jul 16 19:54:58.906 HYPERVISOR: Started on IP = localhost, TCP port = 53597.
+Jul 16 19:54:59.301 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 16 19:54:59.301 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips 
+Jul 16 19:54:59.301 GENERAL: working_dir=C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips
+Jul 16 19:54:59.301 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\0c071092-3ab9-43b0-b375-c2a77f9e5780 
+Jul 16 19:54:59.316 GENERAL: working_dir=C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\0c071092-3ab9-43b0-b375-c2a77f9e5780
+Jul 16 19:54:59.316 HYPERVISOR: exec_cmd: vm create R2 2 c3725 
+Jul 16 19:54:59.316 VM: VM R2 created.
+Jul 16 19:54:59.316 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jul 16 19:54:59.316 HYPERVISOR: exec_cmd: c3725 get_mac_addr R2 
+Jul 16 19:54:59.316 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jul 16 19:54:59.331 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Jul 16 19:54:59.331 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:54:59.331 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60bf8ba0 
+Jul 16 19:54:59.331 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/FahimKhan/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.image 
+Jul 16 19:54:59.331 HYPERVISOR: exec_cmd: c3725 set_mac_addr R2 c202.7d30.0000 
+Jul 16 19:54:59.331 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jul 16 19:54:59.348 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:54:59.348 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-1FE-TX 
+Jul 16 19:54:59.348 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:54:59.348 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 NM-16ESW 
+Jul 16 19:55:04.961 HYPERVISOR: exec_cmd: nio create_udp udp-c22059ff-4ab1-4159-b4b5-0cd3be9722f9 10008 127.0.0.1 10009 
+Jul 16 19:55:05.843 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-c22059ff-4ab1-4159-b4b5-0cd3be9722f9 
+Jul 16 19:55:05.843 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:55:06.011 HYPERVISOR: exec_cmd: nio create_udp udp-2aa712f4-b372-4591-99b9-bce892fef897 10012 127.0.0.1 10013 
+Jul 16 19:55:06.023 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-2aa712f4-b372-4591-99b9-bce892fef897 
+Jul 16 19:55:06.023 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:55:46.994 HYPERVISOR: exec_cmd: nio create_udp udp-e913b023-3457-443a-8270-07df469dc8a7 10058 127.0.0.1 10059 
+Jul 16 19:55:46.994 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-e913b023-3457-443a-8270-07df469dc8a7 
+Jul 16 19:55:46.994 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:55:52.934 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jul 16 19:55:52.950 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\FahimKhan\Desktop\Internship\Week 3\Project\project-files\dynamips\c3725-adventerprisek9-mz124-15.image-128.ghost 
+Jul 16 19:55:52.950 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 19:55:52.954 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Jul 16 19:55:52.959 HYPERVISOR: exec_cmd: vm start R2 
+Jul 16 19:56:23.489 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jul 16 19:56:23.539 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jul 16 20:03:41.011 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 20:03:41.011 HYPERVISOR: exec_cmd: vm stop R2 
+Jul 16 20:03:41.328 VM: VM R2 shutdown.
+Jul 16 20:03:41.337 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jul 16 20:03:48.419 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 20:03:48.422 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jul 16 20:03:48.980 HYPERVISOR: exec_cmd: vm get_status R2 
+Jul 16 20:03:48.983 HYPERVISOR: exec_cmd: vm extract_config R2 
+Jul 16 20:03:48.989 HYPERVISOR: exec_cmd: vm delete R2 
+Jul 16 20:03:48.989 VM: VM R2 destroyed.
+Jul 16 20:03:48.996 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 16 20:03:49.266 HYPERVISOR: Stopped.
+Jul 16 20:03:49.267 GENERAL: reset done.
