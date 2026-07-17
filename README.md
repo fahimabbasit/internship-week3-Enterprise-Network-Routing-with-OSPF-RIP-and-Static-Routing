@@ -67,3 +67,35 @@ The network was designed to simulate communication between different routing dom
 ---
 
 ## Repository Structure
+Project/ │ ├── GNS3_Project/ ├── Configurations/ ├── Screenshots/ ├── Week3_Report.pdf └── README.md
+
+---
+
+## Verification
+
+The following tests were successfully completed:
+
+- OSPF Neighbor Verification
+- Routing Table Verification
+- RIP Route Verification
+- Route Redistribution Verification
+- Static Route Verification
+- Floating Static Route Verification
+- End-to-End Ping Verification
+
+---
+
+## Software Used
+
+- GNS3
+- Cisco IOS Routers
+- Microsoft Word
+- GitHub
+
+---
+
+## Author
+
+**Fahim Abbas**
+
+Network Administration Internship Program
